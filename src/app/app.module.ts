@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent }  from './app.component';
+import { LayoutComponent }  from './layout/layout.component';
 import { HomeComponent }  from './home/home.component';
 import { AboutComponent }  from './about/about.component';
 
@@ -21,6 +22,7 @@ const appRoutes: Routes =[
     ],
   declarations: [ 
     AppComponent,
+    LayoutComponent,
     HomeComponent,
     AboutComponent
      ],
