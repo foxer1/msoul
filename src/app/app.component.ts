@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: './app.template.html',
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent {
+  name = 'Angular';
+  title: string;
+  myHero: string;
+
+  constructor() {
+    this.title = 'Tour of Heroes';
+    this.myHero = 'Windstorm';
+  }
+}
