@@ -10,7 +10,8 @@ import { AboutComponent }  from './about/about.component';
 
 // определение маршрутов
 const appRoutes: Routes =[
-    { path: '', component: HomeComponent},
+    { path: '', component: LayoutComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'about', component: AboutComponent}
 
 ];
