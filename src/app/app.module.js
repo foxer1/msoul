@@ -10,9 +10,11 @@ var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
+var about_component_1 = require("./about/about.component");
 // определение маршрутов
 var appRoutes = [
-    { path: '', component: home_component_1.HomeComponent }
+    { path: '', component: home_component_1.HomeComponent },
+    { path: 'about', component: about_component_1.AboutComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -27,7 +29,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            home_component_1.HomeComponent
+            home_component_1.HomeComponent,
+            about_component_1.AboutComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

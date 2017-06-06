@@ -22,8 +22,7 @@ gulp.task('libs-sass', function () {
 
 gulp.task('libs-scripts', function() {
     return gulp.src([ 
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/foundation-sites/dist/js/foundation.min.js',
+        'node_modules/foundation-sites/dist/js/foundation.min.js'
 
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -54,7 +53,7 @@ gulp.task('build', ['clean', 'app-sass', 'libs-sass', 'app-scripts', 'libs-scrip
 
 });
 
-gulp.task('default', ['watch', 'build']);
+gulp.task('default', ['build']);
 gulp.task('clear', function () {
     return cache.clearAll();
 })

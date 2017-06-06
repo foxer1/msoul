@@ -5,10 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { HomeComponent }  from './home/home.component';
+import { AboutComponent }  from './about/about.component';
 
 // определение маршрутов
 const appRoutes: Routes =[
-    { path: '', component: HomeComponent}
+    { path: '', component: HomeComponent},
+    { path: 'about', component: AboutComponent}
 
 ];
 
@@ -19,7 +21,8 @@ const appRoutes: Routes =[
     ],
   declarations: [ 
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
      ],
   bootstrap:    [ AppComponent ]
 })
