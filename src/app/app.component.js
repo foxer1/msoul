@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+//import { HomeComponent }  from './home/home.component';
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular';
@@ -15,7 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{name}}</h1>",
+        templateUrl: './app.template.html',
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
